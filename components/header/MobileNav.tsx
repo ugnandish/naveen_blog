@@ -1,34 +1,36 @@
 'use client';
 
-import { Dialog, Transition } from '@headlessui/react';
-import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
-import { Fragment, useState, useEffect, useRef } from 'react';
-import Link from '../ui/Link';
-import headerNavLinks from '@/data/headerNavLinks';
+//import { Dialog, Transition } from '@headlessui/react';
+//import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
+//import { Fragment, useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
+//import Link from '../ui/Link';
+//import headerNavLinks from '@/data/headerNavLinks';
 
 const MobileNav = () => {
   const [navShow, setNavShow] = useState(false);
   const navRef = useRef(null);
 
-  const onToggleNav = () => {
-    setNavShow((status) => {
-      if (status) {
-        enableBodyScroll(navRef.current);
-      } else {
-        // Prevent scrolling
-        disableBodyScroll(navRef.current);
-      }
-      return !status;
-    });
-  };
+  // const onToggleNav = () => {
+  //   setNavShow((status) => {
+  //     if (status) {
+  //       enableBodyScroll(navRef.current);
+  //     } else {
+  //       // Prevent scrolling
+  //       disableBodyScroll(navRef.current);
+  //     }
+  //     return !status;
+  //   });
+  // };
 
-  useEffect(() => {
-    return clearAllBodyScrollLocks;
-  });
+  // useEffect(() => {
+  //   return clearAllBodyScrollLocks;
+  // });
 
   return (
     <>
-      <button data-umami-event="mobile-nav-toggle" aria-label="Toggle Menu" onClick={onToggleNav} className="sm:hidden">
+      {/* <button data-umami-event="mobile-nav-toggle" aria-label="Toggle Menu" onClick={onToggleNav} className="sm:hidden"> */}
+      <button data-umami-event="mobile-nav-toggle" aria-label="Toggle Menu" className="sm:hidden">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
@@ -42,7 +44,7 @@ const MobileNav = () => {
           />
         </svg>
       </button>
-      <Transition appear show={navShow} as={Fragment} unmount={false}>
+      {/* <Transition appear show={navShow} as={Fragment} unmount={false}>
         <Dialog as="div" onClose={onToggleNav} unmount={false}>
           <Transition.Child
             as={Fragment}
@@ -77,7 +79,7 @@ const MobileNav = () => {
                     key={link.title}
                     href={link.href}
                     className="mb-4 py-2 pr-4 text-2xl font-bold tracking-widest text-gray-900 outline outline-0 hover:text-primary-500 dark:text-gray-100 dark:hover:text-primary-400"
-                    onClick={onToggleNav}
+                    // onClick={onToggleNav}
                   >
                     {link.title}
                   </Link>
@@ -87,7 +89,7 @@ const MobileNav = () => {
               <button
                 className="fixed right-4 top-7 z-80 h-16 w-16 p-4 text-gray-900 hover:text-primary-500 dark:text-gray-100 dark:hover:text-primary-400"
                 aria-label="Toggle Menu"
-                onClick={onToggleNav}
+                // onClick={onToggleNav}
               >
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                   <path
@@ -100,7 +102,7 @@ const MobileNav = () => {
             </Dialog.Panel>
           </Transition.Child>
         </Dialog>
-      </Transition>
+      </Transition> */}
     </>
   );
 };
