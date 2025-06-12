@@ -23,7 +23,7 @@ const TypedBios = () => {
     <div>
       <ul id="bios" className="hidden">
         <li>
-          I'm aliased as <b className="font-medium">Karhdo</b> at work.
+          {`I'm aliased as <b className="font-medium">Karhdo</b> at work.`}
         </li>
         <li>
           I live in <b className="font-medium">Ho Chi Minh, Viet Nam</b>.
@@ -36,7 +36,7 @@ const TypedBios = () => {
         </li>
         <li>I love web development.</li>
         <li>
-          I'm focusing on building <b className="font-medium">Social Analytics Software</b>.
+          {`I'm focusing on building <b className="font-medium">Social Analytics Software</b>.`}
         </li>
         <li>
           I work mostly with <b className="font-medium">Javascript/Typescript</b> technologies.
@@ -45,7 +45,7 @@ const TypedBios = () => {
           I'm a dog-person <Twemoji emoji="dog" />.
         </li> */}
         <li>
-          I'm a sporty-guy. I love
+          {`I'm a sporty-guy. I love`}
           <span className="ml-1">
             {/* <Twemoji emoji="tennis" />, <Twemoji emoji="soccer-ball" /> */}
           </span>

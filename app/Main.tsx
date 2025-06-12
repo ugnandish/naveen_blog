@@ -5,13 +5,13 @@
 // import NewsletterForm from 'pliny/ui/NewsletterForm';
 
 import siteMetadata from '@/data/siteMetadata';
-import { Link } from '@/components/ui';
+//import { Link } from '@/components/ui';
 //import Tag from '@/components/ui/Tag';
 //import { Tag, Link, Twemoji } from '@/components/ui';
 //import Avatar from '@/components/homepage/Avatar';
 import {Avatar, Heading, Greeting, TypedBios, BlogLinks, PopularTags, ShortDescription, SpotifyNowPlaying } from '@/components/homepage'
 
-const MAX_DISPLAY = 5;
+//const MAX_DISPLAY = 5;
 
 export default function Home() {
   return (
