@@ -1,4 +1,4 @@
-import siteMetadata from '@/data/siteMetadata';
+//import siteMetadata from '@/data/siteMetadata';
 
 import Link from '@/components/ui/Link';
 import BrandIcon from '@/components/ui/BrandIcon';
