@@ -3,13 +3,13 @@
 //import { Dialog, Transition } from '@headlessui/react';
 //import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 //import { Fragment, useState, useEffect, useRef } from 'react';
-import { useState, useEffect, useRef } from 'react';
+//import { useState, useEffect, useRef } from 'react';
 //import Link from '../ui/Link';
 //import headerNavLinks from '@/data/headerNavLinks';
 
 const MobileNav = () => {
-  const [navShow, setNavShow] = useState(false);
-  const navRef = useRef(null);
+  // const [navShow, setNavShow] = useState(false);
+  // const navRef = useRef(null);
 
   // const onToggleNav = () => {
   //   setNavShow((status) => {
