@@ -1,26 +1,26 @@
-import type readingTime from 'reading-time';
+//import type readingTime from 'reading-time';
 
-import type { StatsType } from '@prisma/client';
-import type projectsData from '@/data/projectsData';
+//import type { StatsType } from '@prisma/client';
+//import type projectsData from '@/data/projectsData';
 import type GiscusConfigs from './giscus-configs.type';
 
-export type ProjectDataType = (typeof projectsData)[0];
+//export type ProjectDataType = (typeof projectsData)[0];
 
-export interface ProjectCardProps {
-  project: ProjectDataType;
-}
+// export interface ProjectCardProps {
+//   project: ProjectDataType;
+// }
 
-export type ReadingTime = ReturnType<typeof readingTime>;
+//export type ReadingTime = ReturnType<typeof readingTime>;
 
 export interface BlogMetaProps {
   date: string;
   slug: string;
-  readingTime: ReadingTime;
+  //readingTime: ReadingTime;
 }
 
 export interface ViewCounterProps {
   slug: string;
-  type: StatsType;
+  //type: StatsType;
   className?: string;
 }
 
