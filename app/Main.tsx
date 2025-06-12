@@ -6,14 +6,14 @@
 
 import siteMetadata from '@/data/siteMetadata';
 import { Link } from '@/components/ui';
-import Tag from '@/components/ui/Tag';
+//import Tag from '@/components/ui/Tag';
 //import { Tag, Link, Twemoji } from '@/components/ui';
 //import Avatar from '@/components/homepage/Avatar';
 import {Avatar, Heading, Greeting, TypedBios, BlogLinks, PopularTags, ShortDescription, SpotifyNowPlaying } from '@/components/homepage'
 
 const MAX_DISPLAY = 5;
 
-export default function Home(posts:any ) {
+export default function Home() {
   return (
     <div className="relative">
       {/* <Snowfall
@@ -106,13 +106,13 @@ export default function Home(posts:any ) {
         </ul> */}
       </div>
 
-      {posts.length > MAX_DISPLAY && (
+      {/* {posts.length > MAX_DISPLAY && (
         <div className="flex justify-end text-base font-medium leading-6">
           <Link href="/blog" className="text-primary hover:text-sky-600 dark:hover:text-sky-400" aria-label="All posts">
             All Posts &rarr;
           </Link>
         </div>
-      )}
+      )} */}
 
       {/* {siteMetadata.newsletter.provider && (
         <div className="flex items-center justify-center pt-4">

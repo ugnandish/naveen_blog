@@ -1,6 +1,6 @@
 import { clsx } from 'clsx';
 
-import TiltedGrid from 'public/static/icons/tilted-grid.svg';
+//import TiltedGrid from 'public/static/icons/tilted-grid.svg';
 
 const TiltedGridBackground = ({ className }: { className?: string }) => {
   return (
